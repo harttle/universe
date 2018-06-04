@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universe Demo</title>
+</head>
+<body>
+  <style>
+html, body{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+canvas{
+  background: black;
+}
+  </style>
+  <canvas id="universeElement" width="1000" height="700"></canvas>
+  <script src="./universe.js"></script>
+  <script>
+var univ = universe(universeElement)
+univ.bind(document.body)
+univ.start()
+document.body.addEventListener('click', univ.createStarHere);
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-extend-native": "off",
+    "indent": ["error", 4],
+    "semi": ["error", "always"]
+  },
+  "extends": "standard"
+}

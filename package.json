@@ -1,0 +1,38 @@
+{
+  "name": "canvas-universe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "uglify": "cat universe.js | uglifyjs -mc > universe.min.js",
+    "lint": "eslint universe.js",
+    "start": "http-server -p 8087 -o -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "http-server": "^0.11.1",
+    "uglifyjs": "^2.4.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harttle/universe.git"
+  },
+  "keywords": [
+    "universe",
+    "canvas",
+    "gravity"
+  ],
+  "author": "harttle <yangjvn@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harttle/universe/issues"
+  },
+  "homepage": "https://github.com/harttle/universe#readme"
+}
