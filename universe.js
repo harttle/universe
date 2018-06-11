@@ -1,6 +1,7 @@
 (function () {
     var requestAnimFrame = getAnimationFrame();
     var G = 1;
+    var EXPAND = 0;
     var resistance = 0.8;
 
     function universe (canvas) {
@@ -106,10 +107,10 @@
         function nextMove (star) {
             var x = star.l[0] + star.v[0];
             var y = star.l[1] + star.v[1];
-            if (x > canvas.width + 100 || x < -100) {
+            if (x > canvas.width + EXPAND || x < -EXPAND) {
                 star.v[0] = -star.v[0] * resistance;
             }
-            if (y > canvas.height + 100 || y < -100) {
+            if (y > canvas.height + EXPAND || y < -EXPAND) {
                 star.v[1] = -star.v[1] * resistance;
             }
             star.l[0] += star.v[0];

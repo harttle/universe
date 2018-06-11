@@ -16,8 +16,20 @@ canvas{
 }
   </style>
   <canvas id="universeElement" width="1000" height="700"></canvas>
+  <a class="github-link" href="https://github.com/harttle/universe/tree/master">Github</a>
+  <style>
+  .github-link {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+  }
+  </style>
   <script src="./universe.js"></script>
   <script>
+universeElement.setAttribute('width', window.innerWidth);
+universeElement.setAttribute('height', window.innerHeight);
 var univ = universe(universeElement)
 univ.bind(document.body)
 univ.start()

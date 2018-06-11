@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "uglify": "cat universe.js | uglifyjs -mc > universe.min.js",
+    "build": "cat universe.js | uglifyjs -mc > universe.min.js",
     "lint": "eslint universe.js",
     "start": "http-server -p 8087 -o -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "http-server": "^0.11.1",
-    "uglifyjs": "^2.4.11"
+    "uglify-js": "^3.4.0"
   },
   "repository": {
     "type": "git",
