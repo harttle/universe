@@ -4,7 +4,10 @@
     var EXPAND = 0;
     var resistance = 0.8;
 
-    function universe (canvas) {
+    function universe (canvas, container) {
+        container = container || canvas.parentNode;
+        bind(container);
+
         var ctx = canvas.getContext('2d');
         var sun = {
             m: 1e5,
@@ -28,7 +31,6 @@
             v: [3.9, 0]
         };
         var stars = [sun, p1, p2];
-        var container = canvas.parentNode;
 
         function render () {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
